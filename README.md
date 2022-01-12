@@ -1,4 +1,4 @@
-# Exercícios de Coleções (Colections) em C#
+# Exercícios de Coleções (Collections) em C#
 
 Neste código fiz vários exercícios de Coleções (Collections) em C#
 
