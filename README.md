@@ -35,7 +35,9 @@ Até finalizar
 ## Lista dos exercícios feitos neste código:
 
 1. Criando e percorrendo um array;
-2.
+2. Debugando o array para verificar seu funcionamento no "For" e no "ForEach";
+3. Acessando um array de forma segura. Conversão de string para int para uso no array. Tentando acessar elemento inexistente no array;
+4. Criando, percorrendo e debugando um array multidimencional;
 
 ## 📌 Versão
 
