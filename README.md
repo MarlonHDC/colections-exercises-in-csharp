@@ -49,12 +49,17 @@ Até finalizar
 #### 13. Redimensionando o array através do método "Array.Resize";
 #### 14. Convertendo o tipo do array (int para string) com o método "Array.ConvertAll";
 
-### Coleções de listas Genéricas (que trabalham internamente com Array):
+## Coleções de listas Genéricas (que trabalham internamente com Array):
 
 #### 15. Criando uma lista;
 #### 16. Removendo elemento da lista;
 #### 17. Adicionando elementos de uma outra coleção sem perder os originais através do "AddRange";
 #### 18. Adicionando um elemento em um índice específico;
+
+## Exercícios com coleções específicas em C#;
+#### 19. Trabalhando com Filas;
+#### 20. Trabalhando com "Stack" Pilha;
+#### 21. Trabalhando com Dicionário;
 
 ## 📌 Versão
 
