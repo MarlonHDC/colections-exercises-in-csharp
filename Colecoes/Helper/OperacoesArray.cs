@@ -56,6 +56,25 @@
         {
             return Array.Find(array, element => element == valor);
         }
+
+        // Método para encontrar o índice utilizando o Array.IndexOf;
+        public int ObterIndice(int[] array, int valor)
+        {
+            return Array.IndexOf(array, valor);
+        }
+
+        // Redimensionando um array;
+        public void RedimensionarArray(ref int[] array, int novoTamanho)
+        {
+            Array.Resize(ref array, novoTamanho);
+        }
+
+            
+        public string[] ConverterParaArrayString(int[] array)
+        {
+            return Array.ConvertAll(array, elemento => elemento.ToString());
+        }
+
 	}
 
 }
