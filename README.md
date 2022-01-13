@@ -53,7 +53,8 @@ Até finalizar
 
 #### 15. Criando uma lista;
 #### 16. Removendo elemento da lista;
-#### 17. Adicionando elementos de uma outra coleção sem perder os originais;
+#### 17. Adicionando elementos de uma outra coleção sem perder os originais através do "AddRange";
+#### 18. Adicionando um elemento em um índice específico;
 
 ## 📌 Versão
 
