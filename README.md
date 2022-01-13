@@ -44,7 +44,16 @@ Até finalizar
 #### 8. Copiando parâmetros do array com a Classe Array utilizando o "Array.Copy";
 #### 9. Verificando se determinado elemento existe dentro do array usando o "Array.Existis";
 #### 10. Verificando todos os elementos do array com o método Array.TrueForAll;
-#### 11. Encontrando um elemento e posição específicos no array utilizando o Array.Find;
+#### 11. Encontrando um elemento específico no array utilizando o Array.Find;
+#### 12. Utilização de método para o índice dentro do array através do "Array.IndexOf";
+#### 13. Redimensionando o array através do método "Array.Resize";
+#### 14. Convertendo o tipo do array (int para string) com o método "Array.ConvertAll";
+
+### Coleções de listas Genéricas (que trabalham internamente com Array):
+
+#### 15. Criando uma lista;
+#### 16. Removendo elemento da lista;
+#### 17. Adicionando elementos de uma outra coleção sem perder os originais;
 
 ## 📌 Versão
 
