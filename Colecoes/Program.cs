@@ -8,25 +8,102 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
+            // 21. Trabalhando com dicionário;
+            Dictionary<string, string> estados = new Dictionary<string, string>();
 
-            // 15. Coleções de listas Genéricas (que trabalham internamente com Array):
-            //Operacionalizando lista
-            OperacoesLista opLista = new OperacoesLista();
-            // Criando uma lista
-            List<string> estados = new List<string> { "SP", "MG", "BA" };
-            string[] estadosArray = new string[2] {"SC", "MT"};
+            estados.Add("SP", "São Paulo");
+            estados.Add("MG", "Minas Gerais");
+            estados.Add("BA", "Bahia");
 
-            // Outra forma de adicionar estados;
-            //estados.Add("SP");
-            //estados.Add("MG");
-            //estados.Add("BA");
+            foreach(KeyValuePair<string, string> item in estados) // KeyValue... Coleção de chaves e valores;
+            {
+                //Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}"); // Percorrendo chaves e valores
+            }
 
-            Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
+           // Buscando uma valor através da chave
+           string valorProcurado = "SC";
 
-            opLista.ImprimirListaString(estados);
+            // Tentando buscar um valor incerto com segurança;
+            if (estados.TryGetValue(valorProcurado, out string estadoEncontrado))
+            {
+                Console.WriteLine(estadoEncontrado);
+            }
+            else
+            {
+                Console.WriteLine($"Chave {valorProcurado} não existe no dicionário");
+            }
 
-            // 18. Adicionando um elemento em um índice específico;
-            estados.Insert(1, "RJ");
+            //// Removendo um valor (BA);
+            //Console.WriteLine($"Removendo o valor: {valorProcurado}");
+
+            //estados.Remove(valorProcurado);
+
+            //foreach (KeyValuePair<string, string> item in estados) // KeyValue... Coleção de chaves e valores;
+            //{
+            //    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}"); // Percorrendo chaves e valores
+            //}
+
+            // Console.WriteLine("Valor original");
+            // Console.WriteLine(estados[valorProcurado]);
+
+            //// Atualização de valores;
+            // estados[valorProcurado] = "BA - teste atualização";
+
+            // Console.WriteLine(estados[valorProcurado]);
+
+            //// 20. Trabalhando com "Stack" Pilha;
+            //Stack<string> pilhaLivros = new Stack<string>();
+
+            //pilhaLivros.Push(".NET");
+            //pilhaLivros.Push("DDD");
+            //pilhaLivros.Push("Código limpo");
+
+            //Console.WriteLine($"Livros para a leitura: {pilhaLivros.Count}");
+            //while(pilhaLivros.Count > 0)
+            //{
+            //    Console.WriteLine($"Próximo livro para a leitura: {pilhaLivros.Peek()}");
+            //    Console.WriteLine($"{pilhaLivros.Pop()} lido com sucesso");
+            //}
+
+            //Console.WriteLine($"Livros para a leitura: {pilhaLivros.Count}");
+
+
+            //// 19. Trabalhando com Fila;
+            //Queue<string> fila = new Queue<string>();
+
+            //fila.Enqueue("Leonardo");
+            //fila.Enqueue("Eduardo");
+            //fila.Enqueue("André");
+
+            //// Programa de ordem de atendimento com "while";
+            //Console.WriteLine($"Pessoas na fila: {fila.Count}");
+            //while (fila.Count > 0)
+            //{
+            //    Console.WriteLine($"Vez de: {fila.Peek()}");
+            //    Console.WriteLine($"{fila.Dequeue()} atendido");
+            //}
+
+            //Console.WriteLine($"Pessoas na fila: {fila.Count}");
+
+
+            //// 15. Coleções de listas Genéricas (que trabalham internamente com Array):
+            ////Operacionalizando lista
+            //OperacoesLista opLista = new OperacoesLista();
+            //// Criando uma lista
+            //List<string> estados = new List<string> { "SP", "MG", "BA" };
+            //string[] estadosArray = new string[2] {"SC", "MT"};
+
+            //// Outra forma de adicionar estados;
+            ////estados.Add("SP");
+            ////estados.Add("MG");
+            ////estados.Add("BA");
+
+            //Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
+
+            //opLista.ImprimirListaString(estados);
+
+            //// 18. Adicionando um elemento em um índice específico;
+            //estados.Insert(1, "RJ");
 
 
             //// 17. Adicionando elementos (estados) de uma outra coleção na lista;
@@ -37,7 +114,7 @@ namespace Colecoes
             //estados.Remove("MG");
 
 
-            opLista.ImprimirListaString(estados);
+            //opLista.ImprimirListaString(estados);
 
 
 
