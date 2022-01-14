@@ -61,6 +61,11 @@ Até finalizar
 #### 20. Trabalhando com "Stack" Pilha;
 #### 21. Trabalhando com Dicionário;
 
+## Trabalhando com o LINQ:
+#### 22. Retornando os números pares do array;  
+#### 23. Obter o valor mínimo, máximo e médio pelo LINQ;
+#### 24. Usando o "Sum" e "Distinct";
+
 ## 📌 Versão
 
 Este programa está na versão 1.0. 
