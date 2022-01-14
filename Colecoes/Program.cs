@@ -8,30 +8,64 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            // 21. Trabalhando com dicionário;
-            Dictionary<string, string> estados = new Dictionary<string, string>();
+            // 22. Trabalhando com LINQ;
+            int[] arrayNumeros = new int[10] {100, 1, 4, 0, 8, 15, 19, 19, 4, 100 };
 
-            estados.Add("SP", "São Paulo");
-            estados.Add("MG", "Minas Gerais");
-            estados.Add("BA", "Bahia");
+            // 23. Obter o valor mínimo, máximo e médio pelo LINQ;
+            var minimo = arrayNumeros.Min();
+            var maximo = arrayNumeros.Max();
+            var medio = arrayNumeros.Average();
 
-            foreach(KeyValuePair<string, string> item in estados) // KeyValue... Coleção de chaves e valores;
-            {
-                //Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}"); // Percorrendo chaves e valores
-            }
+            // 24. Usando o "Sum" e "Distinct";
+            var soma = arrayNumeros.Sum();
+            var arrayUnico = arrayNumeros.Distinct().ToArray();
 
-           // Buscando uma valor através da chave
-           string valorProcurado = "SC";
 
-            // Tentando buscar um valor incerto com segurança;
-            if (estados.TryGetValue(valorProcurado, out string estadoEncontrado))
-            {
-                Console.WriteLine(estadoEncontrado);
-            }
-            else
-            {
-                Console.WriteLine($"Chave {valorProcurado} não existe no dicionário");
-            }
+            Console.WriteLine($"Mínimo: {minimo}");
+            Console.WriteLine($"Máximo: {maximo}");
+            Console.WriteLine($"Médio: {medio}");
+            Console.WriteLine($"Soma: {soma}");
+            Console.WriteLine($"Array original: {string.Join(", ", arrayNumeros )}"); // array repetidos;
+            Console.WriteLine($"Array distinto: {string.Join(", ", arrayUnico)}"); // array com valores unicos;
+
+            //// Obtendo números pares do array pela sintaxe;
+            //var numerosParesQuery =
+            //    from num in arrayNumeros
+            //    where num % 2 == 0
+            //    orderby num
+            //    select num;
+
+            //// Obtendo números pares do array pelo método;
+            //var numerosParesMetodo = arrayNumeros.Where(x => x % 2 == 0).OrderBy(x => x).ToList();
+
+            //Console.WriteLine("Números pares query: " + string.Join(", ", numerosParesQuery));
+            //Console.WriteLine("Números pares método: " + string.Join(", ", numerosParesMetodo));
+
+
+            // // 21. Trabalhando com dicionário;
+            // Dictionary<string, string> estados = new Dictionary<string, string>();
+
+            // estados.Add("SP", "São Paulo");
+            // estados.Add("MG", "Minas Gerais");
+            // estados.Add("BA", "Bahia");
+
+            // foreach(KeyValuePair<string, string> item in estados) // KeyValue... Coleção de chaves e valores;
+            // {
+            //     //Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}"); // Percorrendo chaves e valores
+            // }
+
+            //// Buscando uma valor através da chave
+            //string valorProcurado = "SC";
+
+            // // Tentando buscar um valor incerto com segurança;
+            // if (estados.TryGetValue(valorProcurado, out string estadoEncontrado))
+            // {
+            //     Console.WriteLine(estadoEncontrado);
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"Chave {valorProcurado} não existe no dicionário");
+            // }
 
             //// Removendo um valor (BA);
             //Console.WriteLine($"Removendo o valor: {valorProcurado}");
